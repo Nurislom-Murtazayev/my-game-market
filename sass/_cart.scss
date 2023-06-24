@@ -1,0 +1,219 @@
+.cart-pays
+{
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 90px;
+    border-bottom: 1px solid #13101B;
+    .pays 
+    {
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        .pays-left
+        {
+            width: 100%;
+            .payss 
+            {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                .pay 
+                {
+                    width: 436px;
+                    height: 230px;
+                    border-radius: 20px;
+                    
+                    input 
+                    {
+                      display: none;
+                      &:checked
+                      {
+                        transition: 0.5s linear;
+                        & ~ label
+                        {
+                          border-color: #77BE1D;
+                          span 
+                          {
+                            .check{
+                              border-color: #77BE1D;
+                              &::before
+                              {
+                                opacity: 1;
+                              }
+                            }
+                          }
+                        }
+                        
+                      }
+                    }
+                    label 
+                    {
+                      border: 1px solid rgba(255, 255, 255, 0.1);
+                      border-radius: 20px;
+                      width: 100%;
+                      height: 100%;
+                      padding: 30px;
+                      display: block;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: space-between;
+                      color: #fff;
+                      span 
+                      {
+                        display: flex;
+                        gap: 10px;
+                        .check
+                        {
+                          width: 24px;
+                          height: 24px;
+                          border-radius: 50%;
+                          border: 1px solid rgba(255, 255, 255, 0.1);
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          &::before
+                          {
+                            content: "";
+                            width: 12px;
+                            height: 12px;
+                            background-color: #77BE1D;
+                            border-radius: 50%;
+                            opacity: 0;
+
+                          }
+                        }
+                      }
+                    }
+                }
+            }
+            .pays-left-bottom
+            {
+              margin-top: 44px;
+              width: 95%;
+              height: 76px;
+              border: 1px solid rgba(255, 255, 255, 0.1);
+              border-radius: 15px;
+              position: relative;
+              input 
+              {
+                width: 100%;
+                height: 100%;
+                background: none;
+                padding-left: 30px;
+                color: rgba(255, 255, 255, 0.4);
+                border: none;
+                outline: none;
+                &::placeholder
+                {
+                  @include font(500,20px,130%);
+                }
+              }
+              .title
+              {
+                position: absolute;
+                top: 65px;
+                left: 30px;
+                padding: 0 10px;
+                background: #06030F;
+                p 
+                {
+                  @include font(400,16px,130%);
+                  color: rgba(255, 255, 255, 0.3);
+                }
+              }
+            }
+        }
+        .pays-right
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .cart-diskount
+        {
+          width: 321px;
+          height: 382px;
+          border: 2px solid rgba(255, 255, 255, 0.1);
+          border-radius: 30px;
+          padding: 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transition: 0.5s linear;
+          .cart-h2 
+          {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            @include font(700,20px,130%);
+            color: #fff;
+          }
+          h1 
+          {
+            @include font(600,36px,135%);
+            color: #fff;
+            margin-top: 25px;
+          }
+          .zakaz 
+          {
+            margin-top: 25px;
+            @include font(600,18px,130%);
+            color: #77BE1D;
+            padding: 18px 52px;
+            background: rgba(119, 190, 29, 0.1);
+            border-radius: 15px;
+          transition: 0.5s linear;
+          }
+          span 
+          {
+            margin-top: 20px;
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+            img 
+            {
+              margin-top: 5px
+            }
+            p 
+            {
+              @include font(500,16px,130%);
+              color: rgba(255, 255, 255, 0.3);
+              width: 244px;
+              a 
+              {
+                color: #4885FC;
+              }
+            }
+          }
+          &:hover 
+          {
+            border: 2px solid #77BE1D;
+            .zakaz
+            {
+              background: #77BE1D;
+              color: #fff;
+            }
+          }
+        }
+        .cart-discount-about
+        {
+          width: 321px;
+          height: 138px;
+          border: 2px solid rgba(255, 255, 255, 0.1);
+          border-radius: 30px;
+          padding: 30px;
+          p 
+          {
+            @include font(600,16px,160%);
+            color: #fff;
+            span 
+            {
+              color: #77BE1D;
+            }
+          }
+        }
+        }
+    }
+}

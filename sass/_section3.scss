@@ -1,0 +1,113 @@
+.section-3
+{
+    width: 100%;
+    margin-top: 80px;
+    h2 
+    {
+        @include font(500, 32px, 130%);
+        color: #fff;
+        display: flex;
+        gap: 10px;
+        span 
+        {
+            color: #77BE1D;
+        }
+    }
+    &-cards
+    {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        .card-3
+        {
+            width: 620px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            &-img
+            {
+                width: 100%;
+                height: 319px;
+                border-radius: 15px;
+                img 
+                {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &-text
+            {
+                padding: 32px 0 0 32px;
+                width: 100%;
+                height: calc(100% - 319px);
+                &-price 
+                {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    h2 
+                    {
+                        @include font(500, 24px, 130%);
+                        color: #fff;
+                    }
+                    p 
+                    {
+                        padding: 7px 10px;
+                        color: #fff;
+                        border-radius: 8px;
+                        background: #77BE1D;
+                        @include font(500, 18px, 130%);
+                    }
+                    h3 
+                    {
+                        @include font(400, 18px, 130%);
+                        color: rgba(255, 255, 255, 0.2);
+                    }
+                }
+                &-p {
+                    margin-top: 20px;
+                    p 
+                    {
+                        color: #fff;
+                        @include font(400, 16px, 130%);
+                    }
+                }
+                &-about
+                {
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    span 
+                    {
+                        display: flex;
+                        gap: 9px;
+                        .bullet-3
+                        {
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            &.red
+                            {
+                                background: #FF4C00;
+                                opacity: 0.5;
+                            }
+                            &.green
+                            {
+                                background: #4277FF;
+                                opacity: 0.5;
+                            }
+                        }
+                        h4 
+                        {
+                            @include font(500,14px,130%);
+                            color: #747474;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,145 @@
+.section-2
+{
+    width: 100%;
+    margin-top: 80px;
+    .section-2-menu
+    {
+        padding-bottom: 60px;
+        .menu-2
+        {
+            display: flex;
+            gap: 30px;
+            li 
+            {
+                a 
+                {
+                    @include font(500,20px, 130%);
+                    color: #868686;
+                    padding-bottom: 20px;
+                    &:hover
+                    {
+                        color: #fff;
+                    }
+                }
+            }
+            .active-li
+            {
+                a 
+                {
+                    border-bottom: 1px solid #fff;
+                        color: #fff;
+                }
+            }
+        }
+    }
+    .section-2-cards
+    {
+        width: 100%;
+        .cards-2{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            .card-2 {
+                width: 300px;
+                height: 530px;
+                display: flex;
+                flex-direction: column;
+                transition: 0.5s linear;
+                gap: 20px;
+                padding-bottom: 30px;
+                &-img {
+                  width: 300px;
+                  height: 450px;
+                  position: relative;
+                  border-radius: 15px;
+                  img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                  .xit {
+                    position: absolute;
+                    top: 20px;
+                    left: 30px;
+                    padding: 7px 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #FF4C00;
+                    border-radius: 8px;
+                    color: #ffffff;
+                    h2 {
+                      @include font(800, 16px, 130%);
+                      color: #fff;
+                      
+                    }
+                  }
+                }
+                &-text {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  &-price {
+                    display: flex;
+                    gap: 20px;
+                    align-items: flex-end;
+                    h2 {
+                      font-weight: 500;
+                      font-size: 24px;
+                      line-height: 130%;
+                      color: #ffffff;
+                    }
+                    p {
+                      @include font(500, 18px, 130%);
+                      color: #77be1d;
+                    }
+                    h3 {
+                      @include font(400, 18px, 130%);
+                      color: rgba(255, 255, 255, 0.2);
+                      position: relative;
+                      &::before {
+                        content: "";
+                        position: absolute;
+                        width: 76.9px;
+                        height: 1px;
+                        transform: rotate(12.04deg);
+                        background-color: #38353f;
+                        top: 12px;
+                        left: -4px;
+                      }
+                    }
+                  }
+                  &-p {
+                    @include font(400, 16px, 130%);
+                    color: #ffffff;
+                  }
+                  &-about {
+                    display: flex;
+                    gap: 20px;
+                    span {
+                      display: flex;
+                      gap: 9px;
+                      h4 {
+                        @include font(500, 14px, 130%);
+                        color: #747474;
+                      }
+                    }
+                  }
+                }
+              }
+        }
+    }
+    .katalog-click
+    {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 76px;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        color: #366EDC;
+        @include font(600, 18px, 130%)
+    }
+}

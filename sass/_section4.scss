@@ -1,0 +1,82 @@
+.section-4
+{
+    width: 100%;
+    margin-top: 40px;
+    .section-4-img 
+    {
+        width: 100%;
+        height: 150px;
+        border-radius: 15px;
+        img 
+        {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-blog
+    {
+        margin-top: 69px;
+        h2 
+        {
+            @include font(500,32px,130%);
+            color: #fff;
+        }
+        .blogs 
+        {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            gap: 20px;
+            .blog 
+            {
+                width: 407px;
+                height: 400px;
+                &-img 
+                {
+                    width: 100%;
+                    height: 266px;
+                    border-radius: 15px;
+                    img 
+                    {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &-text
+                {
+                    padding: 20px 0 0 20px;
+                    h2 
+                    {
+                        @include font(600,20px, 130%);
+                        color: #fff;
+                    }
+                    h3
+                    {
+                        margin-top: 10px;
+                        @include font(400,18px, 130%);
+                        color: #fff;
+                    }
+                    p 
+                    {
+                        margin-top: 20px;
+                        @include font(400,16px, 130%);
+                        color: #63656A;
+                    }
+                }
+            }
+        }
+        .pub 
+        {
+            margin-top: 40px;
+            width: 100%;
+            height: 76px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            color: #366EDC;
+            @include font(600, 18px, 130%)
+        }
+    }
+}

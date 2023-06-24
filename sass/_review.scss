@@ -1,0 +1,106 @@
+.reviews-section {
+  width: 100%;
+  margin-top: 71px;
+  .rewiews-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      @include font(500, 32px, 130%);
+      color: #fff;
+    }
+    a {
+      padding: 16px 39px;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      @include font(500, 16px, 19px);
+      color: #366edc;
+    }
+  }
+  .reviews {
+    margin-top: 56px;
+    display: flex;
+    gap: 50px;
+    position: relative;
+    .review-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        font-family: "Roboto";
+        @include font(500, 24px, 28px);
+        color: #fff;
+      }
+      img {
+        margin-top: 12px;
+      }
+      p {
+        text-align: center;
+        font-family: "Roboto";
+        @include font(400, 15px, 18px);
+        color: #fff;
+        margin-top: 15px;
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .review-slider {
+      .rewiew-slide {
+        span {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+        p {
+          font-family: "Roboto";
+          @include font(400, 15px, 18px);
+          color: #969696;
+        }
+        h2 {
+          font-family: "Roboto";
+          color: #fff;
+          margin-top: 12px;
+          @include font(500, 15px, 18px);
+        }
+        h3 {
+          font-family: "Roboto";
+          color: #fff;
+          margin-top: 12px;
+          @include font(400, 15px, 18px);
+        }
+        .user-p {
+          margin-top: 10px;
+        }
+      }
+    }
+    .sv {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        .button-prev-rw
+        {
+            left: 192px;
+            &::after
+            {
+                display: none;
+            }
+        }
+        .button-next-rw
+        {
+            right: -42px;
+            &::after
+            {
+                display: none;
+            }
+        }
+      }
+  }
+}
